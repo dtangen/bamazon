@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
 
     user: "root",
 
-    password: "Shorty482!",
+    password: "",
     database: "bamazon"
 });
 
@@ -30,7 +30,7 @@ function displayProducts() {
             console.log(res[i].item_id + " | " + res[i].product_name + " | " + res[i].department_name + " | " + res[i].price + " | " + res[i].stock_quantity);
         }
         if (customerPurchase === false) {
-        customerPrompt();
+            customerPrompt();
         } else {
             connection.end();
         }
