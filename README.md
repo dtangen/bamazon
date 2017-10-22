@@ -1,1 +1,1 @@
-# bamazon
+Bamazon is an application that utilizes node.js to keep track and manage a stores inventory.
